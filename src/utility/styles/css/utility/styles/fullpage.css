@@ -1,0 +1,139 @@
+#fp-nav ul {
+  margin: 0;
+  padding: 0; }
+  #fp-nav ul li {
+    display: block;
+    width: 16px;
+    height: 15px;
+    margin: 8px;
+    position: relative; }
+    #fp-nav ul li a {
+      display: block;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      text-decoration: none;
+      background-color: transparent;
+      -webkit-box-shadow: inset 0 0 0 2px #3bcbff;
+      box-shadow: inset 0 0 0 2px #3bcbff;
+      -webkit-transition: box-shadow 0.3s ease;
+      -webkit-transition: -webkit-box-shadow 0.3s ease;
+      transition: -webkit-box-shadow 0.3s ease;
+      -o-transition: box-shadow 0.3s ease;
+      transition: box-shadow 0.3s ease;
+      transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease; }
+      #fp-nav ul li a span {
+        border-radius: 0;
+        position: absolute;
+        z-index: 1;
+        height: 8px;
+        width: 8px;
+        border: 0;
+        background: none;
+        border: 1px solid white;
+        left: 50%;
+        top: 50%;
+        margin: -4px 0 0 -4px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+    #fp-nav ul li a.active span {
+      height: 18px;
+      width: 18px;
+      margin: -9px 0 0 -9px;
+      border-radius: 0;
+      -webkit-box-shadow: inset 0 0 0 9px #3bcbff;
+      box-shadow: inset 0 0 0 9px #3bcbff; }
+    #fp-nav ul li:hover a.active span {
+      height: 18px;
+      width: 18px;
+      margin: -9px 0 0 -9px;
+      border-radius: 0;
+      -webkit-box-shadow: inset 0 0 0 9px #3bcbff;
+      box-shadow: inset 0 0 0 9px #3bcbff; }
+    #fp-nav ul li:hover a span {
+      width: 14px;
+      height: 14px;
+      margin: -7px 0px 0px -7px;
+      -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6);
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6); }
+    #fp-nav ul li:hover .fp-tooltip {
+      -webkit-transition: opacity 0.2s ease-in;
+      -o-transition: opacity 0.2s ease-in;
+      transition: opacity 0.2s ease-in;
+      width: auto;
+      opacity: 1; }
+    #fp-nav ul li .fp-tooltip {
+      position: absolute;
+      top: -2px;
+      color: #fff;
+      font-size: 23px;
+      font-family: arial, helvetica, sans-serif;
+      white-space: nowrap;
+      max-width: 220px;
+      overflow: hidden;
+      display: block;
+      opacity: 0;
+      width: 0;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    #fp-nav ul li .fp-tooltip.right {
+      right: 20px; }
+    #fp-nav ul li .fp-tooltip.left {
+      left: -20px; }
+
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0; }
+  .fp-slidesNav ul li {
+    display: block;
+    width: 16px;
+    height: 15px;
+    margin: 8px;
+    position: relative;
+    display: inline-block; }
+    .fp-slidesNav ul li a.active span {
+      height: 18px;
+      width: 18px;
+      margin: -9px 0 0 -9px;
+      border-radius: 0;
+      -webkit-box-shadow: inset 0 0 0 9px #3bcbff;
+      box-shadow: inset 0 0 0 9px #3bcbff; }
+    .fp-slidesNav ul li:hover a.active span {
+      height: 18px;
+      width: 18px;
+      margin: -9px 0 0 -9px;
+      border-radius: 0;
+      -webkit-box-shadow: inset 0 0 0 9px #3bcbff;
+      box-shadow: inset 0 0 0 9px #3bcbff; }
+    .fp-slidesNav ul li:hover a span {
+      width: 14px;
+      height: 14px;
+      margin: -7px 0px 0px -7px;
+      -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6);
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6); }
+    .fp-slidesNav ul li a span {
+      border-radius: 0;
+      position: absolute;
+      z-index: 1;
+      height: 8px;
+      width: 8px;
+      border: 0;
+      background: none;
+      border: 1px solid white;
+      left: 50%;
+      top: 50%;
+      margin: -4px 0 0 -4px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  -webkit-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  width: auto;
+  opacity: 1; }

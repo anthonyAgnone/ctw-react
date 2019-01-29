@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.10",
+    "node-sass-chokidar": "^1.3.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3"
+    "react-preloaders": "^2.1.4",
+    "react-scripts": "2.1.3",
+    "react-svg": "^7.2.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-css": "node-sass-chokidar ./src/utility/styles/main.scss -o ./src/utility/styles/css/",
+    "watch-css": "node-sass-chokidar src/ -o ./src/utility/styles/css/ --watch --recursive"
   },
   "eslintConfig": {
     "extends": "react-app"
